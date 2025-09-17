@@ -1,3 +1,8 @@
+<img width="1716" height="805" alt="image" src="https://github.com/user-attachments/assets/d6dd87b7-4b95-4e8b-97e7-d84e8dc0b815" />
+<img width="783" height="670" alt="image" src="https://github.com/user-attachments/assets/fed8d66a-a982-4d1c-a2d0-53ca7552f917" />
+<img width="1349" height="841" alt="image" src="https://github.com/user-attachments/assets/e6448366-dc35-402a-8bc3-62ed2a849300" />
+
+
 # Welcome to your Lovable project
 
 ## Project info
