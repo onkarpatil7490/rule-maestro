@@ -1,3 +1,11 @@
+// Mock data for the application
+// This file contains sample data that simulates real database content
+// TODO: Replace with actual API calls to fetch real data
+// API endpoints needed:
+// - GET /api/tables - fetch list of tables
+// - GET /api/tables/{table_name}/data - fetch table data and metadata
+// - GET /api/rules - fetch existing rules
+
 import { TableData, Rule } from '@/types';
 
 export const mockTableData: TableData = {

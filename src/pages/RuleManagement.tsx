@@ -28,11 +28,15 @@ export default function RuleManagement() {
   });
 
   const handleEditRule = (rule: Rule) => {
+    // TODO: Replace with actual API call to fetch rule details
+    // API endpoint: GET /api/rules/{id}
     // Navigate to rule creation page with rule data
     navigate('/', { state: { editRule: rule } });
   };
 
   const handleDeleteRule = (ruleId: number) => {
+    // TODO: Replace with actual API call to delete rule
+    // API endpoint: DELETE /api/rules/{id}
     setRules(prev => prev.filter(rule => rule.id !== ruleId));
     toast({
       title: "Rule Deleted",

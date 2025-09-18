@@ -53,6 +53,10 @@ export function ChatPanel({ isOpen, onClose, onRuleSuggestion, selectedColumn }:
     setInput('');
     setIsTyping(true);
 
+    // TODO: Replace with actual API call to AI chat service
+    // API endpoint: POST /api/ai/chat
+    // Payload: { message: input, context: { selectedColumn, tableName } }
+    
     // Simulate AI response
     setTimeout(() => {
       const suggestions = [

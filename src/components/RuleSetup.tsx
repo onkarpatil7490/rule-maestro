@@ -41,7 +41,11 @@ export function RuleSetup({
   const handleConvertToSQL = async () => {
     if (!rule.trim() || !selectedColumn) return;
     
-    // Mock SQL conversion - in real app, this would call the API
+    // TODO: Replace with actual API call to convert rule to SQL
+    // API endpoint: POST /api/rules/convert-to-sql
+    // Payload: { rule, table_name: tableName, column_name: selectedColumn }
+    
+    // Mock SQL conversion - replace with actual API response
     const mockSQL = `SELECT * FROM ${tableName} WHERE ${selectedColumn} ${
       rule.toLowerCase().includes('not null') ? 'IS NOT NULL' :
       rule.toLowerCase().includes('between') ? 'BETWEEN 0 AND 1000' :

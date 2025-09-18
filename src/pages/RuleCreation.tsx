@@ -23,10 +23,12 @@ export default function RuleCreation() {
   };
 
   const handleRuleValidate = async (rule: string): Promise<ValidationResult> => {
-    // Simulate API call
+    // TODO: Replace with actual API call to validate rule
+    // API endpoint: POST /api/rules/validate
+    // Payload: { rule, table_name: mockTableData.name, column_name: selectedColumn }
     await new Promise(resolve => setTimeout(resolve, 1500));
     
-    // Mock validation result
+    // Mock validation result - replace with actual API response
     const totalRows = mockTableData.rows.length;
     const goodRows = Math.floor(totalRows * (0.7 + Math.random() * 0.25));
     const badRows = totalRows - goodRows;
@@ -57,6 +59,9 @@ export default function RuleCreation() {
   };
 
   const handleRuleSubmit = (rule: Partial<Rule>) => {
+    // TODO: Replace with actual API call to save rule
+    // API endpoint: POST /api/rules
+    // Payload: rule object
     console.log('Submitting rule:', rule);
     toast({
       title: "Rule Submitted",
@@ -78,6 +83,9 @@ export default function RuleCreation() {
       return;
     }
     
+    // TODO: Replace with actual API call to get AI suggestions
+    // API endpoint: POST /api/ai/suggestions
+    // Payload: { table_name: mockTableData.name, column_name: selectedColumn }
     toast({
       title: "AI Suggestions",
       description: `Getting suggestions for the "${selectedColumn}" column`,
